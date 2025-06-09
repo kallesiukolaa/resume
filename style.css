@@ -114,7 +114,7 @@ section h2 {
 }
 
 .skills li {
-    background: linear-gradient(135deg, #00bfa5, #005050);
+    background: linear-gradient(135deg, #00bfa5);
     padding: 0.5rem 1.2rem;
     border-radius: 50px;
     color: white;
