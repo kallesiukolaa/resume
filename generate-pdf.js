@@ -2,6 +2,15 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
+const cvFileName = 'cv.pdf';
+
+//Take a backup
+const joined = cvFileName.substring(0, cvFileName.lastIndexOf('.')) + '_BACK' + cvFileName.substring(cvFileName.lastIndexOf('.'), cvFileName.length)
+fs.copyFileSync(cvFileName, joined, fs.constants.COPYFILE_FICLONE);
+
+// We want to have a new creation date in order to navigate the file conveniently 
+fs.unlinkSync(cvFileName);
+
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
@@ -20,7 +29,7 @@ const path = require('path');
 
   // Generate PDF
   await page.pdf({
-    path: 'cv.pdf',
+    path: cvFileName,
     printBackground: true,
     width: '210mm',
     height: `${height}px`,
