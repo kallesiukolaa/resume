@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kalle Siukola - Sendor Developer CV</title>
+  <title>Kalle Siukola - Senior Developer CV</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
 
   <div class="container">
 
     <header>
       <h1>Kalle Siukola</h1>
-      <p class="tagline">Data Engineer & Senior Developer | Python & Spark Specialist in Banking</p>
+      <p class="tagline">Software developer with a strong AWS and .Net background</p>
     </header>
 
     <section class="profile">
       <img src="profile.jpg" alt="Kalle Siukola" />
-      <p>Experienced Data Developer with 8+ years in banking technology, specializing in Python, Apache Spark, Databricks, and SQL. Passionate about building scalable data pipelines and delivering high-quality insights.</p>
+      <p>I have experience in containerized applications using .Net and AWS. I have been building AWS infra using IaC tools like CDK.</p>
     </section>
 
     <section class="contact">
@@ -34,14 +37,57 @@
     <section class="skills">
       <h2>Technical Skills</h2>
       <ul class="skill-list">
-        <li>Python</li>
-        <li>Apache Spark</li>
-        <li>Databricks</li>
-        <li>SQL (PostgreSQL, DB2, Snowflake, SQL Server, Databricks)</li>
-        <li>CI/CD & Docker  CDK</li>
-        <li>Linux / Bash</li>
         <li>AWS</li>
+        <li>C#</li>
+        <li>Rest API</li>
+        <li>Docker</li>
+        <li>Typescript</li>
+        <li>Apache Spark</li>
+        <li>CI/CD & Docker CDK</li>
+        <li>CDK</li>
+        <li>Python</li>
+        <li>SQL (PostgreSQL, DB2, Snowflake, SQL Server, Databricks)</li>
       </ul>
+    </section>
+
+    <section class="portfolio">
+      <h2>Portfolio Projects</h2>
+      <div class="project">
+        <h3>Productizing an Internal API</h3>
+        <p><em>Role: Lead Developer</em></p>
+        <ul>
+          <li>Transformed a key internal application into a productized API, significantly improving discoverability and adoption across the corporation.</li>
+          <li>Authored comprehensive documentation and managed the API lifecycle, from initial design to production deployment and maintenance.</li>
+          <li>Collaborated with multiple internal teams to gather requirements, ensuring the API met a wide range of business needs and use cases.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>40TB Cloud Data Migration</h3>
+        <p><em>Role: Data Engineer</em></p>
+        <ul>
+          <li>Orchestrated the migration of over 40 terabytes of data from an on-premises MS SQL Server to Snowflake in the cloud.</li>
+          <li>Utilized AWS cloud orchestration services to build a robust, repeatable, and automated data pipeline.</li>
+          <li>Implemented cost optimization strategies throughout the migration process, reducing operational expenses and improving efficiency.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>IaC & DevOps Implementation for AWS Solution</h3>
+        <p><em>Role: DevOps Engineer</em></p>
+        <ul>
+          <li>Transformed a complex AWS solution from a click-ops environment to a fully automated Infrastructure as Code (IaC) and DevOps practice.</li>
+          <li>Developed and maintained deployment pipelines using AWS CDK, enabling rapid, consistent, and error-free infrastructure changes.</li>
+          <li>Enhanced team agility and reduced manual overhead by establishing robust CI/CD workflows and version control for infrastructure.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Data Synthetization Framework</h3>
+        <p><em>Role: Data Architect</em></p>
+        <ul>
+          <li>Designed and implemented a sophisticated data synthetization framework for complex datasets, preserving data integrity and relationships.</li>
+          <li>Developed a series of automated Data Quality (DQ) checks and integrity validations to ensure the synthetic data accurately mimicked production data.</li>
+          <li>Enabled secure development and testing environments by providing high-quality, non-sensitive synthetic data to serve complex calculation needs.</li>
+        </ul>
+      </div>
     </section>
 
     <section class="experience">
@@ -51,13 +97,16 @@
         <h3>Senior Developer — OP Financial Group</h3>
         <p><em>Jan 2022 – Present</em></p>
         <ul>
-            <li>Implemented a complex calculations on OPDW data platform</li>
-            <li>Complex data synthetization using OP data platform and Databricks GPU clusters.</li>
+          <li>Implemented AWS infra using CDK</li>
+          <li>Built .Net containerized applications on AWS ECS</li>
+          <li>Implemented a complex calculations on Databricks and Pyspark based data platform</li>
+          <li>Complex data synthetization using Banking data platform and Databricks GPU clusters.</li>
           <li>Designed and maintained ETL pipelines using SQL Server and Snowflake</li>
           <li>Automated data workflows with AWS stepfunctions and Snowflake.</li>
           <li>Optimized SQL queries and database schema for financial data marts</li>
           <li>Implemented data quality checks and monitoring dashboards</li>
         </ul>
+
       </div>
 
       <div class="job">
@@ -99,4 +148,5 @@
     /* Paste the CSS here or link externally */
   </style>
 </body>
+
 </html>
